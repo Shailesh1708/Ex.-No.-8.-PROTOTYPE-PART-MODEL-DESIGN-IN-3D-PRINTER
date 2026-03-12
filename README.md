@@ -10,46 +10,121 @@
 ### ●	Autodesk Fusion 360 Software.
 ### ●	System - Windows 7 or higher, 1 GB RAM.
 
-## PROCEDURE:
 
-### Step 1:- Check all Electrical connections.
+## Procedure
 
-### Step 2:- First we install the software related the 3D printer (idea maker, ultimaker etc.)In idea maker first open the software and click the open file option as shown in below figure.
-<img width="966" height="900" alt="Screenshot 2026-03-12 141954" src="https://github.com/user-attachments/assets/775da30b-a63b-44cf-bcca-7db8eac7813c" />
+### Step 1: Open Autodesk Fusion 360
+1. Launch Autodesk Fusion 360.
+2. Create a new design file.
+3. Select Create → New Component to start the gear model design.
+
+### Step 2: Create the Gear Sketch
+1. Select Create Sketch on the XY plane.
+2. Draw a circle which will act as the base for the gear.
+3. Use gear parameters such as number of teeth, pitch diameter, and module.
+4. Use the Circular Pattern tool to create repeated gear teeth.
+5. Finish the sketch after completing the gear profile.
+
+### Step 3: Extrude the Gear Model
+1. Select the completed sketch.
+2. Click Create → Extrude.
+3. Give the required thickness to the gear body.
+4. The gear becomes a 3D solid model.
+
+### Step 4: Save and Export the Model
+1. Save the design in Fusion 360.
+2. Right click the body.
+3. Select Save as Mesh / Export.
+4. Export the model as an STL file for 3D printing.
+
+### Step 5: Open the Model in Cura
+1. Launch Ultimaker Cura.
+2. Click Open File.
+3. Import the STL gear model into the Cura workspace.
+4. The model will appear on the build plate.
+<img width="934" height="576" alt="Screenshot 2026-03-12 141050" src="https://github.com/user-attachments/assets/10fee033-2778-4d09-84c3-ad047262b723" />
 
 
+### Step 6: Use Pan Option
+The Pan option is used to move the view of the model inside the workspace.
+
+Steps:
+1. Press and hold the middle mouse button.
+2. Move the mouse to navigate around the model.
+3. This helps inspect the design from different positions.
+<img width="1595" height="932" alt="Screenshot 2026-03-12 141122" src="https://github.com/user-attachments/assets/aa1de5a2-4c20-475d-bc39-b9ecd784d47a" />
 
 
+### Step 7: Select the Extruder
+1. Click the gear model on the build plate.
+2. Choose the extruder option from the settings panel.
+3. Select either:
+   - Left Extruder
+   - Right Extruder
 
-### Step 3:- select the Pan option and select the extruder (left of right) for printing the design and then after select the Repair option for auto correction of design of software parameter as shown in below figure.
+This step selects the nozzle that will print the model.
+<img width="1593" height="932" alt="Screenshot 2026-03-12 141510" src="https://github.com/user-attachments/assets/7e62b535-0a96-40ee-a86f-cb892d80397d" />
 
-<img width="934" height="576" alt="Screenshot 2026-03-12 141050" src="https://github.com/user-attachments/assets/a39be356-494e-4555-a270-620f88f9183d" />
+### Step 8: Repair the Model
+Sometimes STL files contain mesh errors such as holes, overlapping faces, or non-manifold edges.
 
-### Step 4.:- select the Move option for design print position in build tack plate and then after select the Rotate option for rotate the design easily printed and used low print material as shown in below figure.
-<img width="1595" height="932" alt="Screenshot 2026-03-12 141122" src="https://github.com/user-attachments/assets/1a2fc8ea-1bec-44b6-a5d1-9b0f5c512fa9" />
+Steps:
+1. Import the STL model.
+2. Cura checks the model automatically.
+3. Errors are corrected using automatic mesh repair.
 
+### Step 9: Move the Model
+The Move tool is used to position the model on the build plate.
 
-### Step 5.:- select the Scale option for design scale according to build plate area and then after click the start option and select printing option standard as shown in below figure.
-<img width="1593" height="932" alt="Screenshot 2026-03-12 141510" src="https://github.com/user-attachments/assets/de0cc3e4-313f-4724-a91a-74fd0e640c30" />
+Steps:
+1. Select the Move tool from the toolbar.
+2. Drag the arrows to move the model along:
+   - X-axis
+   - Y-axis
+   - Z-axis
+3. Place the model properly at the center of the build plate.
 
+### Step 10: Rotate the Model
+The Rotate tool is used to adjust the orientation of the model.
 
-### Step 6.:- After completing all settings then click the Slice option and export the file in gcode format.
+Steps:
+1. Select the Rotate option.
+2. Use the rotation circles to rotate along X, Y, or Z axis.
+3. Use Lay Flat option to automatically place the model on the build plate.
 
+Proper rotation helps reduce support material, reduce printing material usage, and improve print quality.
 
-<img width="939" height="583" alt="Screenshot 2026-03-12 141619" src="https://github.com/user-attachments/assets/311600d8-083f-4d91-b993-3061c660ca88" />
+### Step 11: Set Printing Parameters
+Set the required printing parameters such as:
 
+- Layer Height : 0.2 mm
+- Infill Density : 20%
+- Printing Material : PLA
+- Print Speed : 50 mm/s
+- Nozzle Temperature : 200°C
 
-### Step 7.:- After generating the gcode format then follow the these instruction as shown in below figure.
-###   1.	Switch on the 3d printer.
-###   2.	Place your Pen drive in USB.
-###   3.	Clean the surface bed plate.
-###   4.	Load filament into the required extruder as per the requirement.
-###   5.	Wait until the nozzle & bed plate comes into the required temperature.
-###   6.	Close the doors of the 3d printer.
-###   7.	Open the file from the USB storage and select the Print option.
+### Step 12: Slice the Model
+1. Click Slice.
+2. Cura converts the model into G-code instructions.
+3. The slicing process calculates material usage, print time, and layer paths.
+<img width="1596" height="936" alt="Screenshot 2026-03-12 141547" src="https://github.com/user-attachments/assets/83c848fa-8142-4829-875c-d3f694390e59" />
+
+### Step 13: Save the G-code
+1. Click Save to File / Save to SD Card.
+2. Transfer the G-code file to the 3D printer.
+<img width="939" height="583" alt="Screenshot 2026-03-12 141619" src="https://github.com/user-attachments/assets/5adb22e0-aed5-4c41-920b-d11b1245a820" />
+
+### Step 14: Start Printing
+1. Insert the SD card or connect the printer.
+2. Select the G-code file.
+3. Start the 3D printing process.
+
+## Result
+The gear model related to kinematics was successfully designed in Autodesk Fusion 360 and prepared for 3D printing using Ultimaker Cura.
 
 ## Output:
-<img width="1596" height="936" alt="Screenshot 2026-03-12 141547" src="https://github.com/user-attachments/assets/5d87bb79-98ae-442c-90ac-7f40b674d44a" />
+<img width="1465" height="749" alt="Screenshot 2026-03-12 143607" src="https://github.com/user-attachments/assets/13a3722e-1bfb-4f16-828b-48020b8dbe51" />
+
 
 ### Name:Shailesh S S 
 ### Register Number:25007622
