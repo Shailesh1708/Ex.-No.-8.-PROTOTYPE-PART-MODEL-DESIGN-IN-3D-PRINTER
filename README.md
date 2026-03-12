@@ -50,8 +50,9 @@
 
 ## Output:
 <img width="1596" height="936" alt="Screenshot 2026-03-12 141547" src="https://github.com/user-attachments/assets/5d87bb79-98ae-442c-90ac-7f40b674d44a" />
-## Name:Shailesh S S 
-## Register Number:25007622
+
+### Name:Shailesh S S 
+### Register Number:25007622
 
 ## RESULT:
 ###   Thus a prototype of the given part model is developed using 3D Printer.
